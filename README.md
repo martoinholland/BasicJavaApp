@@ -1,0 +1,2 @@
+# BasicJavaApp
+Java university assignment
