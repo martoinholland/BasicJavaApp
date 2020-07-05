@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DetailedReportController">
+   <children>
+      <Label layoutX="26.0" layoutY="25.0" text="Detailed Report of ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="76.0" text="Student id: " />
+      <Label fx:id="labelTitleName" layoutX="181.0" layoutY="25.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="107.0" text="First Name:" />
+      <Label layoutX="26.0" layoutY="137.0" text="Last Name:" />
+      <Label layoutX="26.0" layoutY="165.0" text="Age:" />
+      <Label layoutX="27.0" layoutY="219.0" text="Results">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="82.0" text="Courses">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="122.0" text="Java:" />
+      <Label layoutX="239.0" layoutY="161.0" text="CSharp:" />
+      <Label layoutX="240.0" layoutY="200.0" text="Python:" />
+      <Label layoutX="240.0" layoutY="243.0" text="PHP:" />
+      <TextField fx:id="fieldJava" layoutX="305.0" layoutY="117.0" prefHeight="27.0" prefWidth="46.0" />
+      <TextField fx:id="fieldC" layoutX="305.0" layoutY="155.0" prefHeight="27.0" prefWidth="46.0" />
+      <TextField fx:id="fieldPython" layoutX="305.0" layoutY="195.0" prefHeight="27.0" prefWidth="46.0" />
+      <TextField fx:id="fieldPHP" layoutX="306.0" layoutY="238.0" prefHeight="27.0" prefWidth="46.0" />
+      <Label layoutX="27.0" layoutY="270.0" text="Result:" />
+      <Label layoutX="28.0" layoutY="302.0" text="Retakes:" />
+      <Button fx:id="buttonSave" layoutX="278.0" layoutY="291.0" mnemonicParsing="false" onAction="#SaveCourses" text="Save" />
+      <Label fx:id="labelID" layoutX="111.0" layoutY="76.0" text="Label" />
+      <Label fx:id="labelFName" layoutX="111.0" layoutY="108.0" text="Label" />
+      <Label fx:id="labelLName" layoutX="111.0" layoutY="137.0" text="Label" />
+      <Label fx:id="labelAge" layoutX="111.0" layoutY="166.0" text="Label" />
+      <Label fx:id="labelResult" layoutX="111.0" layoutY="270.0" text="Label" />
+      <Label fx:id="labelRetakes" layoutX="111.0" layoutY="302.0" text="Label" />
+   </children>
+</AnchorPane>

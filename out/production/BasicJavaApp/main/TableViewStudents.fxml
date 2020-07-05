@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.TableViewStudentsController">
+   <children>
+      <Label fx:id="labelStudents" layoutX="14.0" layoutY="14.0" text="Students List">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewStudents" layoutY="58.0" prefHeight="354.0" prefWidth="700.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="34.0" text="ID" />
+            <TableColumn fx:id="fNameCol" prefWidth="130.43452072143555" text="First Name" />
+            <TableColumn fx:id="lNameCol" prefWidth="136.56552124023438" text="Last Name" />
+            <TableColumn fx:id="bDateCol" prefWidth="89.22267150878906" text="Birth Date" />
+            <TableColumn fx:id="ageCol" prefWidth="45.545867919921875" text="Age" />
+            <TableColumn fx:id="groupCol" prefWidth="79.74783325195312" text="Group" />
+            <TableColumn fx:id="javaCol" prefWidth="44.7576904296875" text="Java" visible="false" />
+            <TableColumn fx:id="cshCol" prefWidth="44.2423095703125" text="C#" visible="false" />
+            <TableColumn fx:id="pythonCol" prefWidth="50.40447998046875" text="Python" visible="false" />
+            <TableColumn fx:id="phpCol" prefWidth="43.07427978515625" text="PHP" visible="false" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

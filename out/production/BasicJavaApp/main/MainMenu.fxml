@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainMenuController">
+   <children>
+      <Label fx:id="labelWelcome" layoutX="143.0" layoutY="43.0" text="Welcome">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonStudents" layoutX="147.0" layoutY="94.0" mnemonicParsing="false" onAction="#OpenStudents" prefHeight="27.0" prefWidth="112.0" text="List Students" />
+      <Button fx:id="buttonTeachers" layoutX="147.0" layoutY="141.0" mnemonicParsing="false" onAction="#OpenTeachers" prefHeight="27.0" prefWidth="112.0" text="List Teachers" />
+      <Button fx:id="buttonReport" layoutX="148.0" layoutY="233.0" mnemonicParsing="false" onAction="#DisplayReports" prefHeight="27.0" prefWidth="112.0" text="Display Reports" />
+      <Button fx:id="buttonAddStudent" layoutX="147.0" layoutY="187.0" mnemonicParsing="false" onAction="#AddStudent" prefHeight="27.0" prefWidth="112.0" text="Add Student" />
+      <Button fx:id="buttonSave" layoutX="148.0" layoutY="279.0" mnemonicParsing="false" onAction="#SaveReport" prefHeight="27.0" prefWidth="112.0" text="Save Reports" />
+      <Label fx:id="labelDetailedReport" layoutX="105.0" layoutY="323.0" text="Enter student id for a detailed report:" visible="false" />
+      <TextField fx:id="fieldID" layoutX="112.0" layoutY="347.0" prefHeight="27.0" prefWidth="81.0" promptText="Student ID" visible="false" />
+      <Button fx:id="buttonDetailedReport" layoutX="211.0" layoutY="347.0" mnemonicParsing="false" onAction="#DetailedReport" text="Show Report" visible="false" />
+   </children>
+</AnchorPane>
